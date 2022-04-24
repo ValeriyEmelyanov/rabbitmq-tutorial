@@ -20,3 +20,19 @@ To run the sender:
 ```
 java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=hello-world,sender
 ```
+
+### Tutorial #2: Work queues
+RabbitMQ must be running.
+
+To build the JAR file:
+```
+./mvnw clean package
+```
+To run the receivers:
+```
+java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=work-queues,receiver
+```
+To run the sender:
+```
+java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=work-queues,sender
+```

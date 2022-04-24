@@ -16,7 +16,13 @@ public class RabbitAmqpTutorialsApplication {
     public CommandLineRunner usage() {
         return args -> {
             System.out.println("This app uses Spring Profiles to control its behavior.\n");
-            System.out.println("Sample usage: java -jar rabbit-tutorials.jar --spring.profiles.active=hello-world,sender");
+            System.out.println("Options are: ");
+            System.out.println("# Hello world");
+            System.out.println("java -jar rabbit-tutorials-0.1.jar --spring.profiles.active=hello-world,receiver");
+            System.out.println("java -jar rabbit-tutorials-0.1.jar --spring.profiles.active=hello-world,sender");
+            System.out.println("# Work queues");
+            System.out.println("java -jar rabbit-tutorials-0.1.jar --spring.profiles.active=work-queues,receiver");
+            System.out.println("java -jar rabbit-tutorials-0.1.jar --spring.profiles.active=work-queues,sender");
         };
     }
 
