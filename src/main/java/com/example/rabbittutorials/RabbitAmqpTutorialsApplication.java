@@ -23,6 +23,9 @@ public class RabbitAmqpTutorialsApplication {
             System.out.println("# Work queues");
             System.out.println("java -jar rabbit-tutorials-0.1.jar --spring.profiles.active=work-queues,receiver");
             System.out.println("java -jar rabbit-tutorials-0.1.jar --spring.profiles.active=work-queues,sender");
+            System.out.println("# Publish/Subscribe");
+            System.out.println("java -jar rabbit-tutorials-0.1.jar --spring.profiles.active=pub-sub,receiver");
+            System.out.println("java -jar rabbit-tutorials-0.1.jar --spring.profiles.active=pub-sub,sender");
         };
     }
 
