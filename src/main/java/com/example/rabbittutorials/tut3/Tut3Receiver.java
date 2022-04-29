@@ -3,7 +3,7 @@ package com.example.rabbittutorials.tut3;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.util.StopWatch;
 
-public class Tut3Receaver {
+public class Tut3Receiver {
 
     @RabbitListener(queues = "#{autoDeleteQueue1.name}")
     public void receive1(String message) throws InterruptedException {

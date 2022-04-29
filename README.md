@@ -1,5 +1,7 @@
 # RabbitMQ Tutorial
 
+based on [RabbitMQ Tutorials](https://www.rabbitmq.com/getstarted.html)
+
 ### Technologies
 
 * Java 11
@@ -56,4 +58,17 @@ To run the sender:
 
 ```
 java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=pub-sub,sender --tutorial.client.duration=60000
+```
+
+### Routing
+To run the receivers:
+
+```
+java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=routing,receiver --tutorial.client.duration=60000
+```
+
+To run the sender:
+
+```
+java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=routing,sender --tutorial.client.duration=60000
 ```

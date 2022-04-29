@@ -26,6 +26,9 @@ public class RabbitAmqpTutorialsApplication {
             System.out.println("# Publish/Subscribe");
             System.out.println("java -jar rabbit-tutorials-0.1.jar --spring.profiles.active=pub-sub,receiver");
             System.out.println("java -jar rabbit-tutorials-0.1.jar --spring.profiles.active=pub-sub,sender");
+            System.out.println("# Routing");
+            System.out.println("java -jar rabbitmq-tutorials-0.1.jar --spring.profiles.active=routing,receiver");
+            System.out.println("java -jar rabbitmq-tutorials-0.1.jar --spring.profiles.active=routing,sender");
         };
     }
 

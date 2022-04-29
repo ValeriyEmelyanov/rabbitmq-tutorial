@@ -42,8 +42,8 @@ public class Tut3Config {
         }
 
         @Bean
-        public Tut3Receaver receaver() {
-            return new Tut3Receaver();
+        public Tut3Receiver receaver() {
+            return new Tut3Receiver();
         }
     }
 
