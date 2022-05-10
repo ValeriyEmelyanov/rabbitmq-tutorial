@@ -72,3 +72,16 @@ To run the sender:
 ```
 java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=routing,sender --tutorial.client.duration=60000
 ```
+
+### Topics
+To run the receivers:
+
+```
+java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=topics,receiver --tutorial.client.duration=60000
+```
+
+To run the sender:
+
+```
+java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=topics,sender --tutorial.client.duration=60000
+```
