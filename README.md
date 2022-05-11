@@ -21,13 +21,11 @@ RabbitMQ must be running.
 ### Tutorial #1: Hello world
 
 To run the receiver:
-
 ```
 java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=hello-world,receiver
 ```
 
 To run the sender:
-
 ```
 java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=hello-world,sender
 ```
@@ -35,13 +33,11 @@ java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=hello-world
 ### Tutorial #2: Work queues
 
 To run the receivers:
-
 ```
 java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=work-queues,receiver
 ```
 
 To run the sender:
-
 ```
 java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=work-queues,sender
 ```
@@ -49,26 +45,22 @@ java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=work-queues
 ### Publish/Subscribe
 
 To run the receivers:
-
 ```
 java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=pub-sub,receiver --tutorial.client.duration=60000
 ```
 
 To run the sender:
-
 ```
 java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=pub-sub,sender --tutorial.client.duration=60000
 ```
 
 ### Routing
 To run the receivers:
-
 ```
 java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=routing,receiver --tutorial.client.duration=60000
 ```
 
 To run the sender:
-
 ```
 java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=routing,sender --tutorial.client.duration=60000
 ```
@@ -81,7 +73,17 @@ java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=topics,rece
 ```
 
 To run the sender:
-
 ```
 java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=topics,sender --tutorial.client.duration=60000
+```
+
+### RPC
+To run the server:
+
+```
+java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=rpc,server --tutorial.client.duration=60000
+```
+To run the client:
+```
+java -jar target/rabbitmq-tutorials-0.1.jar --spring.profiles.active=rpc,client
 ```
